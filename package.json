@@ -7,18 +7,34 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "solid-start-vercel": "^0.2.26",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.8"
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/google.maps": "^3.54.8",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "solid-start-vercel": "^0.2.32",
+    "tailwindcss": "^3.3.5",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@solidjs/meta": "^0.28.5",
-    "@solidjs/router": "^0.8.2",
-    "solid-js": "^1.7.5",
-    "solid-start": "^0.2.26",
-    "undici": "^5.22.1"
+    "@googlemaps/js-api-loader": "^1.16.2",
+    "@here/maps-api-for-javascript": "^1.48.1",
+    "mapbox-gl": "^2.15.0",
+    "solid-js": "^1.8.5",
+    "solid-map-gl": "^1.10.1",
+    "solid-start": "^0.3.10",
+    "undici": "^5.27.2"
   },
   "engines": {
     "node": "18.x"
-  }
+  },
+  "name": "mapping",
+  "description": "This directory is a brief example of a [SolidStart](https://github.com/ryansolid/solid-start) site that can be deployed to Vercel with zero configuration.",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }

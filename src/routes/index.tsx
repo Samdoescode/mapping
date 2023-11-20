@@ -1,18 +1,19 @@
-import Counter from "~/components/Counter";
 import "./index.css";
+import { createSignal } from "solid-js";
+import Map from "~/components/Map";
+import Control from "~/components/controls";
+import { ControlStateProvider } from "~/components/context";
 
 export default function Home() {
-  return (
-    <main>
-      <h1>Hello world!</h1>
-      <Counter />
-      <p>
-        Visit{" "}
-        <a href="https://start.solidjs.com" target="_blank">
-          start.solidjs.com
-        </a>{" "}
-        to learn how to build Solid apps.
-      </p>
-    </main>
-  );
+    const [centre, setCentre] = createSignal([151.20, -33.86])
+    return (
+        <main>
+            <ControlStateProvider>
+                <Control />
+                <Map props={{ centre: centre() }} />
+            </ControlStateProvider>
+        </main>
+    );
 }
+
+
